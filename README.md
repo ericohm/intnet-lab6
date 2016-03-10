@@ -1,6 +1,10 @@
 # intnet-lab6
 Lab 6 in DD2390 at KTH.
 
+## Connecting to the server
+1. Visit `https://localhost:1234`
+2. Accept the certificate
+
 ## Generating keystore, truststore and certificate
 ```
 keytool -genkey -keyalg "RSA" -storepass ninaeric -validity 365 -alias lab6 -keystore lab6keystore
