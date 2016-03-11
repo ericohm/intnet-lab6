@@ -60,6 +60,7 @@ _Thumbprint (also known as fingerprint):_ The hash itself, used as an abbreviate
 Operating systems and browsers maintain lists of trusted CA root certificates so they can easily verify certificates that the CAs have issued and signed.
 
 **What is a trust chain?**
+In order to be sure that the certificate that the server sent is authentic, the certificate needs to be signed cryptographically signed by somebody else's private key in such a way that the signature can be verified by anybody who has the corresponding public key. This third party that signs the certificate are usually certificate authorities. But this last step is harder then it sounds, when the CA and server does the exchange, it's vurneble to  man-in-the-middle attack. We could solve this by adding another certificate and a third key pair, but this could go on and on. To solve this, we include a certificate in this chain that is self-signed. So every trust chain has a root, which signs and confirms itself. 
 
 
 **Is it safe to store the certificate password in the code? Why/Why not? Explain the handshake.**
@@ -69,6 +70,9 @@ Operating systems and browsers maintain lists of trusted CA root certificates so
 
 
 **When is asymmetric encryption used?**
+
+
+
 
 ##Keywords
 `X.509`: important standard for a PKI to manage certificates and public-key encryption. A key part of the TLS used to secure web and email communication. X.509 specifies formats for public key certificates, certificate revocation lists, attribute certificates, and a certification path validation algorithm.

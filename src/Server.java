@@ -7,8 +7,8 @@ public class Server {
 	public static void main(String[] args) {
 
         // Set the keystore and truststore information. This can also be set in command line.
-        System.setProperty("javax.net.ssl.keyStore","/Users/Nina/git/intnet-lab6/lab6keystore");
-        System.setProperty("javax.net.ssl.trustStore","/Users/Nina/git/intnet-lab6/lab6truststore");
+        System.setProperty("javax.net.ssl.keyStore","/Users/Eric/git/intnet-lab6/lab6keystore");
+        System.setProperty("javax.net.ssl.trustStore","/Users/Eric/git/intnet-lab6/lab6truststore");
         System.setProperty("javax.net.ssl.keyStorePassword","ninaeric");
         System.setProperty("javax.net.ssl.trustStorePassword","ninaeric");
 
