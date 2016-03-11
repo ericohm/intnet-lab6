@@ -54,6 +54,7 @@ _Thumbprint (also known as fingerprint):_ The hash itself, used as an abbreviate
 
 **Explain how a certificate is validated from a technical standpoint, what type of algorithms are used?**
 
+RSA and a hash algorithm.
 
 **How are root certificates delivered to your computer?**
 
