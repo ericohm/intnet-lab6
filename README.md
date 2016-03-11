@@ -14,3 +14,14 @@ keytool -import -file lab6.cer -alias lab6 -keystore lab6truststore
 
 ## Listing the keystore
 `keytool -list -storepass ninaeric -keystore lab6keystore`
+
+## Questions
+
+**Explain how the PKI work.**
+**Describe the contents of a certificate**
+**Explain how a certificate is validated from a technical standpoint, what type of algorithms are used?**
+**How are root certificates delivered to your computer?**
+**What is a trust chain?**
+**Is it safe to store the certificate password in the code? Why/Why not? Explain the handshake.**
+**When is symmetric encryption used?**
+**When is asymmetric encryption used?**
