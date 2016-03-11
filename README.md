@@ -46,3 +46,15 @@ Operating systems and browsers maintain lists of trusted CA root certificates so
 
 **When is asymmetric encryption used?**
 
+##Keywords
+`X.509`:
+`TLS/SSL`: Secure Sockets Layer and Transport Layer Secuity (small differences).
+`RSA`:
+`Private key`:
+`Public key`:
+`Cipher suite`:
+`HTTPS`: You specify that you want to connect to a server using SSL by replacing http with https.
+`MD5/SHA`: Cryptographic hash functions.
+`AES`: Advanced Encryption Standard. A cipher.
+
+
