@@ -65,13 +65,15 @@ In order to be sure that the certificate that the server sent is authentic, the 
 
 **Is it safe to store the certificate password in the code? Why/Why not? Explain the handshake.**
 
+Nope.
 
 **When is symmetric encryption used?**
 
+Encrypting data.
 
 **When is asymmetric encryption used?**
 
-
+Public/private keys. Authentication.
 
 
 ##Keywords
