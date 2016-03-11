@@ -39,7 +39,17 @@ Note that the CA is essential to preventing man-in-the-middle attacks. However, 
 
 
 **Describe the contents of a certificate**
-
+_Serial Number:_ Used to uniquely identify the certificate.
+_Subject:_ The person, or entity identified.
+_Signature Algorithm:_ The algorithm used to create the signature.
+_Signature:_ The actual signature to verify that it came from the issuer.
+_Issuer:_ The entity that verified the information and issued the certificate.
+_Valid-From:_ The date the certificate is first valid from.
+_Valid-To:_ The expiration date.
+_Key-Usage:_ Purpose of the public key (e.g. encipherment, signature, certificate signing...).
+_Public Key:_ The public key.
+_Thumbprint Algorithm:_ The algorithm used to hash the public key certificate.
+_Thumbprint (also known as fingerprint):_ The hash itself, used as an abbreviated form of the public key certificate.
 
 **Explain how a certificate is validated from a technical standpoint, what type of algorithms are used?**
 
