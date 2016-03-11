@@ -25,9 +25,17 @@ Roles, policies, procedures for `digital certificates`. The PKI creates certific
 
 
 **Describe the contents of a certificate**
+
 **Explain how a certificate is validated from a technical standpoint, what type of algorithms are used?**
+
 **How are root certificates delivered to your computer?**
+Operating systems and browsers maintain lists of trusted CA root certificates so they can easily verify certificates that the CAs have issued and signed.
+
 **What is a trust chain?**
+
 **Is it safe to store the certificate password in the code? Why/Why not? Explain the handshake.**
+
 **When is symmetric encryption used?**
+
 **When is asymmetric encryption used?**
+
