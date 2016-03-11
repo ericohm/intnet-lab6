@@ -85,7 +85,7 @@ In order to be sure that the certificate that the server sent is authentic, the 
 
 `Public key`:
 
-`Cipher suite`:
+`Cipher suite`: combination of authentication, encryption, MAC and key exchange algorithms
 
 `HTTPS`: You specify that you want to connect to a server using SSL by replacing http with https.
 
