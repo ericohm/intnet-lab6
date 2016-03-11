@@ -17,7 +17,13 @@ keytool -import -file lab6.cer -alias lab6 -keystore lab6truststore
 
 ## Questions
 
-**Explain how the PKI work.**
+**Explain how the PKI (Public Key Infrastructure) work.**
+Roles, policies, procedures for `digital certificates`. The PKI creates certificates which map public keys to entities and securely stores these certificates in a central repository.
+`RA` = Registration Authority. `CA`= Certificate Authority. `VA` = Validation Authority.
+
+(1) User applies for certificate with his public key at RA. (2) RA confirms the user's identity to the CA. (3) CA issues the certificate. (4) The user can digitally sign a contract using the certificate. (5) The user's identity is checked with a VA which receives information about certificates by CA.
+
+
 **Describe the contents of a certificate**
 **Explain how a certificate is validated from a technical standpoint, what type of algorithms are used?**
 **How are root certificates delivered to your computer?**
