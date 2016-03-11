@@ -39,6 +39,7 @@ Note that the CA is essential to preventing man-in-the-middle attacks. However, 
 
 
 **Describe the contents of a certificate**
+
 _Serial Number:_ Used to uniquely identify the certificate.
 _Subject:_ The person, or entity identified.
 _Signature Algorithm:_ The algorithm used to create the signature.
@@ -70,7 +71,7 @@ Operating systems and browsers maintain lists of trusted CA root certificates so
 **When is asymmetric encryption used?**
 
 ##Keywords
-`X.509`:
+`X.509`: important standard for a PKI to manage certificates and public-key encryption. A key part of the TLS used to secure web and email communication. X.509 specifies formats for public key certificates, certificate revocation lists, attribute certificates, and a certification path validation algorithm.
 
 `TLS/SSL`: Secure Sockets Layer and Transport Layer Secuity (small differences).
 
