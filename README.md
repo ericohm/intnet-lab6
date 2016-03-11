@@ -24,6 +24,18 @@ Roles, policies, procedures for `digital certificates`. The PKI creates certific
 
 (1) User applies for certificate with his public key at RA. (2) RA confirms the user's identity to the CA. (3) CA issues the certificate. (4) The user can digitally sign a contract using the certificate. (5) The user's identity is checked with a VA which receives information about certificates by CA.
 
+Here is a very simplified explanation:
+
+Your web browser downloads the web server's certificate, which contains the public key of the web server. This certificate is signed with the private key of a trusted certificate authority.
+
+Your web browser comes installed with the public keys of all of the major certificate authorities. It uses this public key to verify that the web server's certificate was indeed signed by the trusted certificate authority.
+
+The certificate contains the domain name and/or ip address of the web server. Your web browser confirms that the address listed in the certificate is the one to which it has an open connection.
+
+Your web browser generates a shared symmetric key which will be used to encrypt the HTTP traffic on this connection; this is much more efficient than using public/private key encryption for everything. Your browser encrypts the symmetric key with the public key of the web server then sends it back, thus ensuring that only the web server can decrypt it, since only the web server has its private key.
+
+Note that the certificate authority (CA) is essential to preventing man-in-the-middle attacks. However, even an unsigned certificate will prevent someone from passively listening in on your encrypted traffic, since they have no way to gain access to your shared symmetric key.
+
 
 **Describe the contents of a certificate**
 
